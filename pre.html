@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dork Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        .section h2 {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .dork-list {
+            display: none;
+            margin-top: 10px;
+        }
+        .dork-list a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #333;
+        }
+        .dork-list a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+    <script>
+        function toggleDorks(sectionId) {
+            const dorkList = document.getElementById(sectionId);
+            if (dorkList.style.display === "block") {
+                dorkList.style.display = "none";
+            } else {
+                dorkList.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-1')">Section 1: Index Dorks</h2>
+        <div id="dork-list-1" class="dork-list">
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22*.phtml%22+site:.edu" target="_blank">intitle:"index of" "*.phtml" site:.edu</a>
+            <li><a href="https://www.google.com/search?q=allintext:wp-includes/rest-api" target="_blank">allintext:wp-includes/rest-api</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:.com+index+of+movies" target="_blank">inurl:.com index of movies</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:index.of.etc" target="_blank">intitle:index.of.etc</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22*.php%22" target="_blank">intitle:"index of" "*.php"</a></li>
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-2')">Section 2: Vulnerability Dorks</h2>
+        <div id="dork-list-2" class="dork-list">
+            <li><a href="https://www.google.com/search?q=inurl:*gov+intitle:%22index+of%22+%22docker-compose%22" target="_blank">inurl:*gov intitle:"index of" "docker-compose"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22/sql%22+%22admin%22" target="_blank">Google Dork: intitle:"index of" "/sql" "admin"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22/cgi-bin%22+%22admin%22" target="_blank">intitle:"index of" "/cgi-bin" "admin"</a></li>
+            <li><a href="https://www.google.com/search?q=intext:%22powered+by+BlueCMS+v1.6%22" target="_blank">intext:"powered by BlueCMS v1.6"</a></li>
+            <li><a href="https://www.google.com/search?q=allinurl:forcedownload.php?file=" target="_blank">allinurl:forcedownload.php?file=</a></li>
+        </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-3')">Section 3: Admin Panel Dorks</h2>
+        <div id="dork-list-3" class="dork-list">
+            <li><a href="https://www.google.com/search?q=intitle:%22Control+panel%22+%22Control+Panel+Login%22+ArticleLive+inurl:admin+-demo" target="_blank">intitle:"Control panel" "Control Panel Login" ArticleLive inurl:admin -demo</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:cartwiz/store/index.asp" target="_blank">inurl:cartwiz/store/index.asp</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:gallery+inurl:setup+%22Gallery+configuration%22" target="_blank">intitle:gallery inurl:setup "Gallery configuration"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22Directory+Listing%22+%22tree+view%22" target="_blank">intitle:"Directory Listing" "tree view"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22Directory+Listing%22+%22tree+view%22" target="_blank">intitle:"Directory Listing" "tree view"</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:changepassword.cgi+-cvs" target="_blank">inurl:changepassword.cgi -cvs</a></li>
+        </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-4')">Section 4: Miscellaneous Dorks</h2>
+        <div id="dork-list-4" class="dork-list">
+            <li><a href="https://www.google.com/search?q=filetype:mdb+%22standard+jet%22+%28password+%7C+username+%7C+user+%7C+pass%29" target="_blank">filetype:mdb "standard jet" (password | username | user | pass)</a></li>
+            <li><a href="https://www.google.com/search?q=filetype:inc+inc+intext:setcookie" target="_blank">filetype:inc inc intext:setcookie</a></li>
+           <li><a href="https://www.google.com/search?q=intitle:%22phpremoteview%22+filetype:php" target="_blank">intitle:"phpremoteview" filetype:php</a></li>
+           <li><a href="https://www.google.com/search?q=inurl:%22WWWADMIN.PL%22+intitle:%22wwwadmin%22" target="_blank">inurl:" WWWADMIN.PL" intitle:"wwwadmin"</a></li>
+           <li><a href="https://www.google.com/search?q=filetype:lit+lit+%28books%7Cebooks%29" target="_blank">filetype:lit lit (books|ebooks)</a></li>
+        </div>
+    </div>
+
+    <!--SECTION 5-->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-5')">Section 5: Sensitive Directories</h2>
+        <div id="dork-list-5" class="dork-list">
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+/concrete/Password" target="_blank">intitle: index of /concrete/Password</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+database.properties" target="_blank">intitle:"index of" database.properties</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%2Fvenv" target="_blank">intitle:Index of "/venv"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+pyvenv.cfg" target="_blank">intitle:Index of "pyvenv.cfg"</a></li>
+            <li><a href="https://www.google.com/search?q=site:com+intitle:index+of+..................etcpasswd" target="_blank">site:com intitle:index of ..................etcpasswd</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22sqlite.db%22" target="_blank">intitle:"index of" "sqlite.db"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22.env%22" target="_blank">intitle:"index of" ".env"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22Invoices%2A%22" target="_blank">intitle:" index of "/Invoices*"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22backup.xml%22" target="_blank">intitle: "index of backup.xml"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22backup.php%22" target="_blank">intitle: "index of backup.php"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22SCADA%22" target="_blank">intitle:"index of SCADA"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22payment%22" target="_blank">Google Dork: intitle: "index of" "payment"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22private%2Flog%22" target="_blank">intitle:"index of" "private/log"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+inurl:fileadmin" target="_blank">intitle: "Index of" inurl:fileadmin</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:index.of+(inurl:admin+%7C+intitle:admin)" target="_blank">intitle:index.of (inurl:admin | intitle:admin)</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22contacts.vcf%22" target="_blank">intitle:"index of" "contacts.vcf"</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:filemanager%2Fupload%2Fasp%2F+%22index+of%22" target="_blank">inurl:filemanager/upload/asp/ "index of"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22%2Fconfigs%22" target="_blank">intitle:"index of" "/configs"</a></li>
+            <li><a href="https://www.google.com/search?q=intext:%22CAD+Media+Log%22" target="_blank">intext:"CAD Media Log"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22%2F.vscode%22" target="_blank">intitle:"index of" "/.vscode"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+intext:%22client.key.pem%22" target="_blank">intitle:"index of" intext:"client.key.pem"</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:wp-content%2Fuploads%2F+intitle:logs" target="_blank">inurl:wp-content/uploads/ intitle:logs</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:%2Fwp-content%2Fuploads%2Fwp-file-manager-pro%2Ffm_backup" target="_blank">inurl:/wp-content/uploads/wp-file-manager-pro/fm_backup</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:%2Fwp-content%2Fuploads%2Fwp-file-manager-pro" target="_blank">inurl:/wp-content/uploads/wp-file-manager-pro</a></li>
+            <li><a href="https://www.google.com/search?q=%22-----BEGIN+EC+PRIVATE+KEY-----%22+%7C+%22+-----BEGIN+EC+PARAMETERS-----%22+ext:pem+%7C+ext:key+%7C+ext:txt" target="_blank">"-----BEGIN EC PRIVATE KEY-----" | " -----BEGIN EC PARAMETERS-----" ext:pem | ext:key | ext:txt</a></li>
+            <li><a href="https://www.google.com/search?q=%22-----BEGIN+PGP+PRIVATE+KEY+BLOCK-----%22+ext:pem+%7C+ext:key+%7C+ext:txt+-git" target="_blank">"-----BEGIN PGP PRIVATE KEY BLOCK-----" ext:pem | ext:key | ext:txt -git</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:tcpconfig.html" target="_blank">inurl:tcpconfig.html</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:print.htm+intext:%22Domain+Name:%22+%22Open+printable+report%22" target="_blank">inurl:print.htm intext:"Domain Name:" + "Open printable report"</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:%2Fcerts%2Fserver.key" target="_blank">inurl:/certs/server.key</a></li>
+            <li><a href="https://www.google.com/search?q=inurl:%2Fjsps%2Ftestoperation.jsp+%22Test+Operation%22" target="_blank">inurl:/jsps/testoperation.jsp "Test Operation"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22%2FMaildir%2Fnew%22" target="_blank">intitle:"index of" "*Maildir/new"</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%28%22Index+of%22+AND+%22wp-content%2Fplugins%2Fboldgrid-backup%2F%22%29" target="_blank">intitle:("Index of" AND "wp-content/plugins/boldgrid-backup/=")</a></li>
+            <li><a href="https://www.google.com/search?q=%22--+Dumped+from+database+version%22+%2B+%22--+Dumped+by+pg_dump+version%22+ext:txt+%7C+ext:sql+%7C+ext:env+%7C+ext:log" target="_blank">"-- Dumped from database version" + "-- Dumped by pg_dump version" ext:txt | ext:sql | ext:env | ext:log</a></li>
+            <li><a href="https://www.google.com/search?q=%2Fetc%2Fconfig+%2B+%22index+of+%2F%22+%2F" target="_blank">/etc/config + "index of /" /</a></li>
+            <li><a href="https://www.google.com/search?q=%2Fetc%2Fcerts+%2B+%22index+of+%2F%22+%2A%2F%2A" target="_blank">/etc/certs + "index of /" */*</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+inurl:admin%2Fdownload" target="_blank">intitle:"index of" inurl:admin/download</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22dump.sql%22" target="_blank">intitle:"index of" "dump.sql"</a></li>
+            <li><a href="https://www.google.com/search?q=ssh_host_dsa_key.pub+%2B+ssh_host_key+%2B+ssh_config+%3D+%22index+of+%2F+%22" target="_blank">ssh_host_dsa_key.pub + ssh_host_key + ssh_config = "index of / "</a></li>
+            <li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22.cert.pem%22+%7C+%22.key.pem%22" target="_blank">intitle:"index of" "*.cert.pem" | "*.key.pem"</a></li>
+            <li><a href="https://www.google.com/search?q=%22index+of%22+inurl:database+ext:sql+%7C+xls+%7C+xml+%7C+json+%7C+csv" target="_blank">"index of" inurl:database ext:sql | xls | xml | json | csv</a></li>
+         
+         </div>
+         </div>
+         </section>
+
+<!--SECTION 6-->
+    <div class="section">
+        <h2 onclick="toggleDorks('dork-list-6')">Section 6: Footholds</h2>
+        <div id="dork-list-6" class="dork-list"> 
+            <li><a href="https://www.google.com/search?q=inurl:adminpanel+site:gov.*" target="_blank">inurl:adminpanel site:gov.*</a></li>
+<li><a href="https://www.google.com/search?q=inurl:maps.arcgis.com+%2B%22City+of%22" target="_blank">inurl:maps.arcgis.com +"City of"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:wsnavigator/jsps" target="_blank">inurl:wsnavigator/jsps</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22httpd.pid%22" target="_blank">intitle:"index of" "httpd.pid"</a></li>
+<li><a href="https://www.google.com/search?q=mail/u/0+filetype:pdf" target="_blank">mail/u/0 filetype:pdf</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/plugins/servlet/Wallboard/%22" target="_blank">inurl:"/plugins/servlet/Wallboard/"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/Dashboard.xhtml+intitle:%22Dashboard%22" target="_blank">inurl:/Dashboard.xhtml intitle:"Dashboard"</a></li>
+<li><a href="https://www.google.com/search?q=inurl::/app/kibana+%22Kibana%22+-discuss+-ipaddress+-git" target="_blank">inurl::/app/kibana "Kibana" -discuss -ipaddress -git</a></li>
+<li><a href="https://www.google.com/search?q=inurl:CTCWebService" target="_blank">inurl:CTCWebService</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index.of%22+%2Bjmx-console" target="_blank">intitle:"index.of" +jmx-console</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of+/%22+%2B.htdocs" target="_blank">intitle:"index of /" +.htdocs</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22Index+of+/%22+%2B.htaccess" target="_blank">intitle:"Index of /" +.htaccess</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22nginx.log%22" target="_blank">intitle:"index of" "nginx.log"</a></li>
+<li><a href="https://www.google.com/search?q=%22radius-server+key%22+ext:cfg+OR+ext:log+OR+ext:txt" target="_blank">"radius-server key" ext:cfg OR ext:log OR ext:txt</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/jmx-console/HtmlAdaptor?action%22" target="_blank">inurl:"/jmx-console/HtmlAdaptor?action"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+and+intext:%22vendor%22+and+intext:%22phpunit%22" target="_blank">intitle:"index of" and intext:"vendor" and intext:"phpunit"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/arcgis/rest/services%22" target="_blank">inurl:"/arcgis/rest/services"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:logon/LogonPoint/index.html" target="_blank">inurl:logon/LogonPoint/index.html</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22admin/xml%22" target="_blank">intitle:"index of" "admin/xml"</a></li>
+<li><a href="https://www.google.com/search?q=Find+Microsoft+Lync+Server+AutoDiscover" target="_blank">Find Microsoft Lync Server AutoDiscover</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/download_file/+intext:%22index+of+/%22" target="_blank">inurl:/download_file/ intext:"index of /"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/servicedesk/customer/user/login" target="_blank">inurl:/servicedesk/customer/user/login</a></li>
+<li><a href="https://www.google.com/search?q=site:linkedin.com+employees+target.com" target="_blank">site:linkedin.com employees target.com</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22customer.aspx%22" target="_blank">inurl:"customer.aspx"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:(%22Mini+Shell%22)+AND+intext:(%22Upload+File%22)" target="_blank">intitle:("Mini Shell") AND intext:("Upload File")</a></li>
+<li><a href="https://www.google.com/search?q=intitle:(%22Index+of%22)+AND+intext:(%22c99.txt%22+OR+%22c100.txt%22)" target="_blank">intitle:("Index of") AND intext:("c99.txt" OR "c100.txt")</a></li>
+<li><a href="https://www.google.com/search?q=intitle:(%22SSI+Web+Shell%22)+AND+intext:(%22ls+-al%22)" target="_blank">intitle:"(SSI Web Shell)" AND intext:"(ls -al)"</a></li>
+<li><a href="https://www.google.com/search?q=site:bamboo.*.*+ext:action+build" target="_blank">site:bamboo.*.* ext:action build</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22index+of%22+wso" target="_blank">inurl:"index of" wso</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22freedom+is+real+-+1945%22" target="_blank">intitle:"freedom is real - 1945"</a></li>
+<li><a href="https://www.google.com/search?q=site:%2A/wp-admin/install.php+intitle:WordPress+Installation" target="_blank">site:*/wp-admin/install.php intitle:WordPress Installation</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22index.php?db=%22" target="_blank">inurl:"index.php?db="</a></li>
+<li><a href="https://www.google.com/search?q=intitle:Administration+-+Installation+-+MantisBT" target="_blank">intitle:Administration - Installation - MantisBT</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/phpmyadmin/index.php?db=" target="_blank">inurl:/phpmyadmin/index.php?db=</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22cs.html?url=%22" target="_blank">inurl:"cs.html?url="</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22urlstatusgo.html?url=%22+-intext:%22Disallowed+by+URL+filter%22" target="_blank">inurl:"urlstatusgo.html?url=" -intext:"Disallowed by URL filter"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:wp-login.php?action=register" target="_blank">inurl:wp-login.php?action=register</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/phpMyAdmin/setup/index.php?phpMyAdmin=" target="_blank">inurl:/phpMyAdmin/setup/index.php?phpMyAdmin=</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/sidekiq/busy%22" target="_blank">inurl:"/sidekiq/busy"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22InfluxDB+-+Admin+Interface%22+-github" target="_blank">intitle:"InfluxDB - Admin Interface" -github</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22FCKeditor+-+Uploaders+Tests%22" target="_blank">intitle:"FCKeditor - Uploaders Tests"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22FCKeditor+-+Connectors+Tests%22" target="_blank">intitle:"FCKeditor - Connectors Tests"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22page/export%22" target="_blank">inurl:"page/export"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22Microsoft+SQL+Server+Report+Manager%22+%22Home%22+inurl:%22/Reports/browse/%22" target="_blank">intitle:"Microsoft SQL Server Report Manager" "Home" inurl:"/Reports/browse/"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/database/upgrade%22" target="_blank">inurl:"/database/upgrade"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/api/atlas/ui/%22" target="_blank">inurl:"/api/atlas/ui/"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/view/index.shtml%22" target="_blank">inurl:"/view/index.shtml"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22main/dhtmlGrid.js%22" target="_blank">inurl:"main/dhtmlGrid.js"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22sftp-config.json%22" target="_blank">inurl:"sftp-config.json"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/ReportServer?/Company+sales%22" target="_blank">inurl:"/ReportServer?/Company sales"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/admin/HttpProxyServlet%22" target="_blank">inurl:"/admin/HttpProxyServlet"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/mongo-express/%22" target="_blank">inurl:"/mongo-express/"</a></li>
+
+</div>
+</div>
+</section>
+
+  <!--SECTION 7-->
+  <div class="section">
+    <h2 onclick="toggleDorks('dork-list-7')">Section 7: Sensitive Directories</h2>
+    <div id="dork-list-7" class="dork-list">
+        <li><a href="https://www.google.com/search?q=%22START+test_database%22+ext:log" target="_blank">"START test_database" ext:log</a></li>
+<li><a href="https://www.google.com/search?q=%22Header+for+logs+at+time%22+ext:log" target="_blank">"Header for logs at time" ext:log</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22/usernames%22" target="_blank">intitle:"index of" "/usernames"</a></li>
+<li><a href="https://www.google.com/search?q=intext:%22-----BEGIN+CERTIFICATE-----%22+ext:txt" target="_blank">intext:"-----BEGIN CERTIFICATE-----" ext:txt</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22contacts.txt%22" target="_blank">intitle:"index of" "contacts.txt"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22db.properties%22+OR+%22db.properties.BAK%22" target="_blank">intitle:"index of" "db.properties" | "db.properties.BAK"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22credentials.xml%22+OR+%22credentials.inc%22+OR+%22credentials.txt%22" target="_blank">intitle:"index of" "credentials.xml" | "credentials.inc" | "credentials.txt"</a></li>
+<li><a href="https://www.google.com/search?q=%27dsn:+mysql:host=localhost;dbname=%22+ext:yml+OR+ext:txt+%22password:%22" target="_blank">‘dsn: mysql:host=localhost;dbname=" ext:yml | ext:txt "password:"</a></li>
+<li><a href="https://www.google.com/search?q=jdbc:sqlserver://localhost:1433+%2B+username+%2B+password+ext:yml+OR+ext:java" target="_blank">jdbc:sqlserver://localhost:1433 + username + password ext:yml | ext:java</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22password.yml%22" target="_blank">intitle:"index of" "password.yml"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22sitemanager.xml%22+OR+%22recentservers.xml%22" target="_blank">intitle:"index of" "sitemanager.xml" | "recentservers.xml"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22filezilla.xml%22" target="_blank">intitle:"index of" "filezilla.xml"</a></li>
+<li><a href="https://www.google.com/search?q=%22DefaultPassword%22+ext:reg+%22[HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows+NTCurrentVersionWinlogon]%22" target="_blank">"DefaultPassword" ext:reg "[HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionWinlogon]"</a></li>
+<li><a href="https://www.google.com/search?q=filetype:csv+intext:%22Secret+access+key%22" target="_blank">filetype:csv intext:"Secret access key"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:user+intitle:index+of+ext:sql+OR+xls+OR+xml+OR+json+OR+csv" target="_blank">inurl:user intitle:index of ext:sql | xls | xml | json | csv</a></li>
+<li><a href="https://www.google.com/search?q=jdbc:mysql://localhost:3306/+username+%2B+password+ext:yml+OR+ext:java+-git+-gitlab" target="_blank">jdbc:mysql://localhost:3306/ + username + password ext:yml | ext:java -git -gitlab</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22/parameters.yml%22*" target="_blank">intitle:"index of" "/parameters.yml*"</a></li>
+<li><a href="https://www.google.com/search?q=%22CREATE+ROLE%22+%2B+%22ENCRYPTED+PASSWORD%22+ext:sql+OR+ext:txt+OR+ext:ini+-git+-gitlab" target="_blank">"CREATE ROLE" + "ENCRYPTED PASSWORD" ext:sql | ext:txt | ext:ini -git -gitlab</a></li>
+<li><a href="https://www.google.com/search?q=File+contains+Sensitive+Information" target="_blank">File contains Sensitive Information</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22users.frm%22" target="_blank">intitle:"index of" "users.frm"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22tomcat-users.xml%22" target="_blank">intitle:"index of" "tomcat-users.xml"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22/ftpusers%22" target="_blank">intitle:"index of" "/ftpusers"</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+%22users.sql%22" target="_blank">intitle:"index of" "users.sql"</a></li>
+<li><a href="https://www.google.com/search?q=allintext:username+filetype:log" target="_blank">allintext:username filetype:log</a></li>
+<li><a href="https://www.google.com/search?q=intitle:%22index+of%22+service.grp" target="_blank">intitle:"index of" service.grp</a></li>
+<li><a href="https://www.google.com/search?q=intitle:index.of+%22users.db%22" target="_blank">intitle:index.of "users.db"</a></li>
+<li><a href="https://www.google.com/search?q=%22username.xlsx%22+ext:xlsx" target="_blank">"username.xlsx" ext:xlsx</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/_layouts/mobile/view.aspx?List=" target="_blank">inurl:/_layouts/mobile/view.aspx?List=</a></li>
+<li><a href="https://www.google.com/search?q=%22authentication+failure;+logname=%22+ext:log" target="_blank">"authentication failure; logname=" ext:log</a></li>
+<li><a href="https://www.google.com/search?q=inurl:/profile.php?lookup=1" target="_blank">inurl:/profile.php?lookup=1</a></li>
+<li><a href="https://www.google.com/search?q=intext:%22root:x:0:0:root:/root:/bin/bash%22+inurl:*=/etc/passwd" target="_blank">intext:"root:x:0:0:root:/root:/bin/bash" inurl:*=/etc/passwd</a></li>
+<li><a href="https://www.google.com/search?q=inurl:%22/root/etc/passwd%22+intext:%22home/*:%22" target="_blank">inurl:"/root/etc/passwd" intext:"home/*:"</a></li>
+<li><a href="https://www.google.com/search?q=site:extremetracking.com+inurl:%22login=%22" target="_blank">site:extremetracking.com inurl:"login="</a></li>
+<li><a href="https://www.google.com/search?q=intext:%22SteamUserPassphrase=%22+intext:%22SteamAppUser=%22+-%22username%22+-%22user%22" target="_blank">intext:"SteamUserPassphrase=" intext:"SteamAppUser=" -"username" -"user"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:root.asp?acs=anon" target="_blank">inurl:root.asp?acs=anon</a></li>
+<li><a href="https://www.google.com/search?q=filetype:conf+inurl:proftpd.conf+-sample" target="_blank">filetype:conf inurl:proftpd.conf -sample</a></li>
+<li><a href="https://www.google.com/search?q=filetype:log+username+putty" target="_blank">filetype:log username putty</a></li>
+<li><a href="https://www.google.com/search?q=filetype:reg+reg+%2Bintext:%22internet+account+manager%22" target="_blank">filetype:reg reg +intext:"internet account manager"</a></li>
+<li><a href="https://www.google.com/search?q=filetype:reg+reg+HKEY_CURRENT_USER+username" target="_blank">filetype:reg reg HKEY_CURRENT_USER username</a></li>
+<li><a href="https://www.google.com/search?q=%2Bintext:%22webalizer%22+%2Bintext:%22Total+Usernames%22+%2Bintext:%22Usage+Statistics+for%22" target="_blank">+intext:"webalizer" +intext:"Total Usernames" +intext:"Usage Statistics for"</a></li>
+<li><a href="https://www.google.com/search?q=inurl:php+inurl:hlstats+intext:%22Server+Username%22" target="_blank">inurl:php inurl:hlstats intext:"Server Username"</a></li>
+<li><a href="https://www.google.com/search?q=index.of+perform.ini" target="_blank">index.of perform.ini</a></li>
+<li><a href="https://www.google.com/search?q=%22index+of%22+%2F+lck" target="_blank">"index of" / lck</a></li>
+<li><a href="https://www.google.com/search?q=inurl:admin+inurl:userlist" target="_blank">inurl:admin inurl:userlist</a></li>
+<li><a href="https://www.google.com/search?q=inurl:admin+filetype:asp+inurl:userlist" target="_blank">inurl:admin filetype:asp inurl:userlist</a></li>
+<li><a href="https://www.google.com/search?q=intitle:index.of+%2Ebash_history" target="_blank">intitle:index.of .bash_history</a></li>
+<li><a href="https://www.google.com/search?q=intitle:index.of+%2Esh_history" target="_blank">intitle:index.of .sh_history</a></li>
+
+    </div>
+    </div>
+</section>
+</body>
+</html>
